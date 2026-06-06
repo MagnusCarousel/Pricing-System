@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sari-Sari Store System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🛒 FRANCING PRICING SYSTEM</h1>
+
+    <!-- Add Product -->
+    <div class="card">
+        <h2>Add Product</h2>
+
+        <input
+            id="name"
+            type="text"
+            placeholder="Product Name"
+        >
+
+        <input
+            id="price"
+            type="number"
+            placeholder="Price"
+        >
+
+        <button onclick="addProduct()">
+            Add Product
+        </button>
+    </div>
+
+    <!-- Search Product -->
+    <div class="card">
+        <h2>Search Product</h2>
+
+        <input
+            id="search"
+            type="text"
+            placeholder="Search product..."
+        >
+
+        <button onclick="searchProduct()">
+            Search
+        </button>
+
+        <button onclick="showProducts()">
+            Show All
+        </button>
+    </div>
+
+    <!-- Products List -->
+    <div class="card">
+        <h2>Products</h2>
+        <div id="list">
+            Loading...
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
